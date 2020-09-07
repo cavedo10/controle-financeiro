@@ -1,0 +1,51 @@
+.titulo{
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+}
+main{
+    position: relative;
+    text-align: center;
+}
+.titulo__saldo{
+    font-size: 2rem;
+    margin: auto;
+}
+.saldo{
+    font-size: 1.5rem;
+    margin: auto;
+}
+.container__valores {
+    display: flex;
+    justify-content: space-around;
+}
+.container__credito{
+    
+    text-align: left;
+}
+.receita{
+    
+    text-align: left;
+    margin: 0;
+}
+.credito{
+    color: blue;
+    margin: 0;
+}
+.container__debito{
+    text-align: right;
+}
+.despesa{
+    text-align: right;
+    margin: 0;
+}
+.debito{
+    color: red;
+    text-align: left;
+    margin: 0;
+}
+section h3{
+    position: relative;
+    margin: 0.5rem auto;
+}
+

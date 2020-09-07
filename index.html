@@ -3,38 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>Controle Finançeiro</title>
 </head>
 <body>
     <header>
-        <h1>Controle Financeiro</h1>
+        <h1 class="titulo">Controle Financeiro</h1>
     </header>
     <main>
-        <div class="container">
-            <h2 >Saldo atual</h2>
+        <div class="container__saldo">
+            <h2 class="titulo__saldo">Saldo atual</h2>
             <p class="saldo">R$ 0,00</p>
+        </div>
 
-            <div class="valores">
-                <div>
-                    <h3>Receita</h3>
+        <div>
+            <div class="container__valores">
+                <div class="container__credito">
+                    <h2 class="receita">Receita</h2>
                     <p class="credito">R$ 0,00</p>
+                    <section class="mostra__transacao">
+                        <h3>Transações</h3>
+                        <ul class="transacoes">
+                        </ul>
+                    </section>
                 </div>
-                <div>
-                    <h3>Despesas</h3>
+
+                <div class="container__debito">
+                    <h2 class="despesa">Despesas</h2>
                     <p class="debito">R$ 0,00</p>
+                    <section class="mostra__transacao">
+                        <h3>Transações</h3>
+                        <ul class="transacoes">
+                        </ul>
+                    </section>
                 </div>
             </div>
         </div>
 
         <section class="mostra__transacao">
-        <h3>Transações</h3>
+        <h2>Transações</h2>
         <ul class="transacoes">
         </ul>
         </section>
        
         <div class="container__transacoes">
             <section>
-                <h4>Adiciona transação</h4>
+                <h3>Adiciona transação</h3>
                 <p>Nome:</p>
                 <input class="adiciona__nome" autofocus type="text" placeholder="Nome da transação"/>
             </section>

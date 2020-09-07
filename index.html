@@ -6,6 +6,48 @@
     <title>Controle Finançeiro</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Controle Financeiro</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2 >Saldo atual</h2>
+            <p class="saldo">R$ 0,00</p>
+
+            <div class="valores">
+                <div>
+                    <h3>Receita</h3>
+                    <p class="credito">R$ 0,00</p>
+                </div>
+                <div>
+                    <h3>Despesas</h3>
+                    <p class="debito">R$ 0,00</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="mostra__transacao">
+        <h3>Transações</h3>
+        <ul class="transacoes">
+        </ul>
+        </section>
+       
+        <div class="container__transacoes">
+            <section>
+                <h4>Adiciona transação</h4>
+                <p>Nome:</p>
+                <input class="adiciona__nome" autofocus type="text" placeholder="Nome da transação"/>
+            </section>
+            <section>
+                <p>Valor:</p>
+                <input class="adiciona__valor" type="number" placeholder="Valor da transação"/>
+            </section>
+            <button class="botao">Adiciona</button>
+        </div>
+
+
+    </main>
+    <script src="./index.js"></script>
+
 </body>
 </html>

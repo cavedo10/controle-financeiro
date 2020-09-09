@@ -1,67 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Controle Finançeiro</title>
-</head>
-<body>
-    <header>
-        <h1 class="titulo">Controle Financeiro</h1>
-    </header>
-    <main>
-        <div class="container__saldo">
-            <h2 class="titulo__saldo">Saldo atual</h2>
-            <p class="saldo">R$ 0,00</p>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Controle de despesas</title>
+  </head>
+  <body>
+    <h2>Controle de despesas</h2>
+
+    <div class="container">
+      <h4>Saldo atual</h4>
+      
+      <h1 id="balance" class="balance">R$ 0.00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Receitas</h4>
+          <p id="money-plus" class="money plus">+ R$0.00</p>
         </div>
 
         <div>
-            <div class="container__valores">
-                <div class="container__credito">
-                    <h2 class="receita">Receita</h2>
-                    <p class="credito">R$ 0,00</p>
-                    <section class="mostra__transacao">
-                        <h3>Transações</h3>
-                        <ul class="transacoes">
-                        </ul>
-                    </section>
-                </div>
+          <h4>Despesas</h4>
+          <p id="money-minus" class="money minus">- R$0.00</p>
+        </div>
+      </div>
 
-                <div class="container__debito">
-                    <h2 class="despesa">Despesas</h2>
-                    <p class="debito">R$ 0,00</p>
-                    <section class="mostra__transacao">
-                        <h3>Transações</h3>
-                        <ul class="transacoes">
-                        </ul>
-                    </section>
-                </div>
-            </div>
+      <h3>Transações</h3>
+      
+      <ul id="transactions" class="transactions">
+        <!-- <li class="minus">
+          Salário <span>-$400</span><button class="delete-btn">x</button>
+        </li> -->
+      </ul>
+
+      <h3>Adicionar transação</h3>
+      
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Nome</label>
+          <input autofocus type="text" id="text" placeholder="Nome da transação" />
         </div>
 
-        <section class="mostra__transacao">
-        <h2>Transações</h2>
-        <ul class="transacoes">
-        </ul>
-        </section>
-       
-        <div class="container__transacoes">
-            <section>
-                <h3>Adiciona transação</h3>
-                <p>Nome:</p>
-                <input class="adiciona__nome" autofocus type="text" placeholder="Nome da transação"/>
-            </section>
-            <section>
-                <p>Valor:</p>
-                <input class="adiciona__valor" type="number" placeholder="Valor da transação"/>
-            </section>
-            <button class="botao">Adiciona</button>
+        <div class="form-control">
+          <label for="amount">Valor <br />
+            <small>(negativo - despesas, positivo - receitas)</small>
+          </label>
+          <input type="number" id="amount" placeholder="Valor da transação" />
         </div>
 
+        <button class="btn">Adicionar</button>
+      </form>
+    </div>
 
-    </main>
     <script src="./index.js"></script>
-
-</body>
+  </body>
 </html>

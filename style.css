@@ -24,10 +24,16 @@ body {
   width: 350px;
 }
 
-h1 {
+.balance {
   letter-spacing: 1px;
   margin: 0;
   color: #2e75cc;
+}
+
+#balance {
+  letter-spacing: 1px;
+  margin: 0;
+  color: #a32218;
 }
 
 h3 {
@@ -59,18 +65,18 @@ h4 {
   border-right: 1px solid #dedede;
 }
 
-.money {
+.money-plus {
+  color: #2ecc71;
   font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
 }
 
-.money.plus {
-  color: #2ecc71;
-}
-
-.money.minus {
+.money-minus {
   color: #c0392b;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
 }
 
 label {
